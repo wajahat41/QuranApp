@@ -28,17 +28,20 @@ public class ParahCustomListConfig extends ArrayAdapter<Parah> {
         TextView nameU = convertView.findViewById(R.id.textView2);
         TextView nameE = convertView.findViewById(R.id.textView3);
         id.setText(s.getId());
-        nameU.setText(s.getNameE());
+        //nameU.setText(s.getNameE());
+        nameU.setText("");
         nameE.setText(s.getNameU());
 
 
         if(position%2==0)
         {
-            convertView.setBackgroundColor(Color.rgb(255,193,193));
+            //convertView.setBackgroundColor(Color.rgb(255,193,193));
+            convertView.setBackgroundColor(Color.parseColor("#1E4620"));
         }
         else
         {
-            convertView.setBackgroundColor(Color.rgb(193, 239, 255));
+            //convertView.setBackgroundColor(Color.rgb(193, 239, 255));
+            convertView.setBackgroundColor(Color.parseColor("#1E4620"));
         }
         return convertView;
     }

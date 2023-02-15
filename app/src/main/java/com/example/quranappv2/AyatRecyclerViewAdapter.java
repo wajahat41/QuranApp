@@ -52,17 +52,20 @@ public class AyatRecyclerViewAdapter extends RecyclerView.Adapter<AyatRecyclerVi
     public void onBindViewHolder(@NonNull AyatRecyclerViewAdapter.MyVH holder, int position) {
         holder.data=ayatList.get(position);
         holder.ayat.setText(holder.data.getArabicText());
-        holder.translation.setText(holder.data.getUrduMehmood());
+        //holder.translation.setText(holder.data.getUrduMehmood());
+        holder.translation.setText(holder.data.getEnglishMohsin());
 
 
         if(position %2 == 1)
         {
-            holder.itemView.setBackgroundColor(Color.parseColor("#C1EFFF"));
+            holder.itemView.setBackgroundColor(Color.parseColor("#1E4620"));
+            //holder.itemView.setBackgroundColor(Color.parseColor("#C1EFFF"));
             //  holder.imageView.setBackgroundColor(Color.parseColor("#FFFFFF"));
         }
         else
         {
-            holder.itemView.setBackgroundColor(Color.parseColor("#FFC1C1"));
+            holder.itemView.setBackgroundColor(Color.parseColor("#1E4620"));
+            //holder.itemView.setBackgroundColor(Color.parseColor("#FFC1C1"));
             //  holder.imageView.setBackgroundColor(Color.parseColor("#FFFAF8FD"));
         }
     }
