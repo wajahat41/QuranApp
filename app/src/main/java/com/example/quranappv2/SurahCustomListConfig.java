@@ -31,16 +31,7 @@ public class SurahCustomListConfig extends ArrayAdapter<Surah> {
         name.setText(s.getNameU());
         nazool.setText("");
 
-        if(position%2==0)
-        {
-            convertView.setBackgroundColor(Color.parseColor("#1E4620"));
-            //convertView.setBackgroundColor(Color.rgb(255,193,193));
-        }
-        else
-        {
-            //convertView.setBackgroundColor(Color.rgb(193, 239, 255));
-            convertView.setBackgroundColor(Color.parseColor("#1E4620"));
-        }
+        convertView.setBackgroundColor(Color.parseColor("#1E4620"));
 
 
         return convertView;

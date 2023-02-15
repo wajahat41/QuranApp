@@ -5,21 +5,15 @@ import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.List;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
+
 
 import java.util.List;
 
@@ -29,7 +23,7 @@ public class AyatRecyclerViewAdapter extends RecyclerView.Adapter<AyatRecyclerVi
     private  int qariIndex;
     public AyatRecyclerViewAdapter(ArrayList<Ayat> ayatList) {
         this.ayatList = ayatList;
-        //this.qariIndex=i;
+
     }
 
     @NonNull
@@ -51,18 +45,7 @@ public class AyatRecyclerViewAdapter extends RecyclerView.Adapter<AyatRecyclerVi
         holder.translation.setText(holder.data.getEnglishMohsin());
 
 
-        if(position %2 == 1)
-        {
-            holder.itemView.setBackgroundColor(Color.parseColor("#1E4620"));
-            //holder.itemView.setBackgroundColor(Color.parseColor("#C1EFFF"));
-            //  holder.imageView.setBackgroundColor(Color.parseColor("#FFFFFF"));
-        }
-        else
-        {
-            holder.itemView.setBackgroundColor(Color.parseColor("#1E4620"));
-            //holder.itemView.setBackgroundColor(Color.parseColor("#FFC1C1"));
-            //  holder.imageView.setBackgroundColor(Color.parseColor("#FFFAF8FD"));
-        }
+        holder.itemView.setBackgroundColor(Color.parseColor("#1E4620"));
     }
 
     @Override
