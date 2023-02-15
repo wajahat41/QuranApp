@@ -31,7 +31,6 @@ class DataBaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         // Do NOTHING in here as the database has been copied from the assets
-        // if it did not already exist
         Log.d(TAG, "METHOD onCreate called");
     }
     @Override
